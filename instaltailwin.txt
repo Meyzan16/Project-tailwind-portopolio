@@ -1,0 +1,6 @@
+1.npm init -y
+2. npm install -D tailwindcss
+3. npx tailwindcss init
+4. content untuk module
+5. src untukk input
+6. watch

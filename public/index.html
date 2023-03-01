@@ -22,14 +22,14 @@
             <!-- justify beetween digunakan untuk menjejerkan -->
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">Meyzan Al Yutra</a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Meyzanalyutra</a>
                 </div>
 
                 <!-- element sebelah kanan -->
                 <!-- ketika mobile -->
                 <div class="flex items-center px-4 ">
                     <button id="hamburger" name="hamburger" type="button" 
-                    class="block absolute right-4">
+                    class="block absolute right-4 lg:hidden">
                         <span class="hamburger-line rounded-lg origin-top-left transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line rounded-lg duration-300 ease-in-out"></span>
                         <span class="hamburger-line rounded-lg  origin-bottom-left duration-300 ease-in-out"></span>
@@ -37,10 +37,20 @@
 
                     <nav id="navbar" class="hidden absolute py-5 
                     bg-white shadow-lg rounded-lg max-w-[250px] w-full
-                        right-4">
-                        <ul>
-                            <li>
-                                <a href="#home">Beranda</a>
+                        right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <!-- ketika di mobila diplay blcok tapi ketika di layar besar display jadi flex -->
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"  class="text-base text-dark py-2 px-8 flex lg:inline-flex hover:text-primary">Beranda</a>
+                                <a href="#about"  class="text-base text-dark py-2 px-8  flex lg:inline-flex hover:text-primary">Tentang Saya</a>
+                                <a href="#portfolio"  class="text-base text-dark py-2 px-8 flex lg:inline-flex hover:text-primary">Portfolio</a>
+                                <a href="#clients"  class="text-base text-dark py-2 px-8 flex lg:inline-flex  hover:text-primary">Clients</a>
+                                <a href="#blog"  class="text-base text-dark py-2 px-8  flex lg:inline-flex hover:text-primary">Blog</a>
+                                <a href="#contact"  class="text-base text-dark py-2 px-8 flex lg:inline-flex hover:text-primary">Contact</a>
+                              
+                                
+                              
+                                <!-- <a href="#contact"  class="text-base text-dark py-2 px-8  inline-flex  hover:text-primary">Contact</a> -->
                             </li>
                         </ul>
                     </nav>
@@ -70,7 +80,7 @@
                         </span>
                     </h1>
                     <h2 class="font-medium text-secondary mt-4  "> 
-                       <span class="font-serif text-dark text-2xl sm:text-4xl lg:text-5xl font-semibold">
+                       <span class="font-serif text-slate-600 text-2xl sm:text-4xl lg:text-5xl font-semibold">
                         A Web Developer
                        </span> 
                     </h2>
@@ -178,6 +188,55 @@
         </div>
     </section>
     <!-- section about end -->
+
+    <!-- portofolio -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-primary text-lg mb-2">
+                            Portfolio
+                        </h4>
+                        <h2 class="font-semibold text-dark text-3xl mb-4">Project Solved</h2>
+                        <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quis eveniet. Laboriosam suscipit impedit soluta?</p>
+                    </div>
+                </div>   
+                
+                <div class="w-full  px-4 flex flex-wrap justify-center mx-auto xl:w-10/12 ">
+
+                    <div class="mb-6 p-6 md:w-1/2">
+                        <div class="rounded-lg overflow-hidden shadow-xl shadow-slate-500 
+                        border-2 hover:scale-95 transition-all duration-500">
+                            <img  src="https://source.unsplash.com/600x400?computer" 
+                            alt="1" width="w-full"
+                            >
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page Meyzan Al Yutra</h3>
+                        <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda rem fuga rerum, blanditiis officia.</p>
+                       
+                        
+                    </div>
+
+                    <div class=" mb-6  p-6  md:w-1/2">
+                        <div class="rounded-lg overflow-hidden shadow-xl shadow-slate-500 
+                        border-2   hover:scale-95 
+                        transition-all duration-500">
+                            <img  src="https://source.unsplash.com/600x400?computer" 
+                            alt="2" width="w-full"
+                            >
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Landing Page Meyzan Al Yutra</h3>
+                        <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda rem fuga rerum, blanditiis officia.</p>
+                       
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+   
+</div>
+    <!-- portofolio end -->
 
     
 

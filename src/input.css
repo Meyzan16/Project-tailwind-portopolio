@@ -5,6 +5,33 @@
 body {
     font-family:'Inter', sans-serif;
 }
+.logo-sosmed {
+    @apply  sm:w-14 sm:h-14 w-9 h-9
+                        rounded-full flex justify-center items-center border
+                         border-slate-300 hover:border-primary hover:bg-primary  
+                         transition-all duration-300 hover:ease-in hover:scale-125
+                         hover:text-white 
+}
+
+.img-skills {
+    @apply flex flex-wrap bg-slate-100 bg-opacity-80 p-4 
+                        items-center justify-between 
+                        rounded-lg  mb-5 overflow-hidden shadow-xl 
+                        shadow-slate-300 hover:scale-105 transition-all duration-500 
+}
+
+.img-portofolio {
+    @apply rounded-lg overflow-hidden shadow-xl
+                             shadow-slate-700 
+                                hover:scale-105 transition-all duration-500  
+}
+
+.img-clients {
+    @apply max-w-[90px] 
+                    mx-4 py-4 grayscale 
+                    opacity-90 transition hover:grayscale-0
+                    hover:opacity-100 duration-500 lg:mx-6 xl:mx-8
+}
 
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-60;

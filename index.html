@@ -8,6 +8,8 @@
     <link href="dist/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
@@ -153,8 +155,8 @@
     <!-- end hero section -->
 
     <!-- section about -->
-    <section id="about" class="pt-24  pb-32">
-        <div class="container">
+    <section  id="about" class="pt-24  pb-32">
+        <div data-aos="fade-up"   data-aos-duration="500"  class="container" >
             <div class="flex flex-wrap px-4">
                 <div class="max-w-full  mb-10  self-center lg:w-2/3 ">
                     <h4 class="font-bold uppercase text-primary text-lg sm:text-2xl lg:text-3xl mb-3">About Me</h4>
@@ -197,8 +199,8 @@
     </section>
     <!-- section about end -->
 
-    <section id="skills" class="pt-24 pb-32">
-        <div class="container">
+    <section id="skills" class="pt-24 pb-32"   >
+        <div class="container" data-aos="fade-up"   data-aos-duration="500">
             <div class="w-full px-4">
                     <div class=" text-left mb-10">
                         <h4 class="font-semibold uppercase text-primary text-lg mb-2 sm:text-3xl 
@@ -214,7 +216,7 @@
 
             <div class="w-full px-4 ">
                 <div class="w-full grid grid-cols-2 gap-4 lg:grid-cols-4 mx-auto ">
-                    <div class="img-skills">
+                    <div class="img-skills" >
                             <div class="w-1/2 flex items-center justify-end px-4">
                                 <img src="./dist/img/skills/CSS3_logo.svg.png" alt="" class="w-12">
                             </div>
@@ -332,7 +334,7 @@
     
     <!-- portofolio -->
     <section id="portfolio" class="pt-24 pb-16 bg-slate-100">
-        <div class="container">
+        <div class="container" data-aos="fade-up"   data-aos-duration="500">
                 <div class="w-full px-4">
                     <div class=" mx-auto text-center mb-14">
                         <h4 class="font-semibold uppercase text-primary text-lg mb-2 sm:text-3xl lg:text-4xl ">
@@ -391,7 +393,7 @@
     </section>
 
     <section id="clients" class="pt-36 pb-32 ">
-        <div class="container">
+        <div class="container" data-aos="fade-up"   data-aos-duration="500">
             <div class="w-full px-4">
                     <div class="mx-auto text-center mb-8">
                         <h4 class="font-semibold uppercase text-primary text-lg mb-2 sm:text-3xl lg:text-4xl">
@@ -447,9 +449,11 @@
     <!-- portofolio end -->
 
     
-
-    <script src="dist/js/script.js">
-
-    </script>
+   
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
